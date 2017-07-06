@@ -18,13 +18,13 @@ function keyPressed(e) {
   
   var code = e.keyCode
   if (code == 38)
-    player.y -= 100
+    player.y -= 10
   if (code == 40)
-    player.y += 100
+    player.y += 10
   if (code == 37)
-    player.x -= 100
+    player.x -= 10
   if (code == 39)
-    player.x  += 100
+    player.x  += 10
 
   if (player.x < 0)
     player.x = 0
@@ -44,4 +44,4 @@ setInterval(function() {
   
   // draw player
   player.render()
-}, 2000/60)
+}, 1000/60)
