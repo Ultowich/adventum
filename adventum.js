@@ -18,13 +18,13 @@ function keyPressed(e) {
   
   var code = e.keyCode
   if (code == 38)
-    player.y -= 10
+    player.y -= 100
   if (code == 40)
-    player.y += 10
+    player.y += 100
   if (code == 37)
-    player.x -= 10
+    player.x -= 100
   if (code == 39)
-    player.x  += 10
+    player.x  += 100
 
   if (player.x < 0)
     player.x = 0
