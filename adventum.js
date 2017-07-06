@@ -36,7 +36,7 @@ function keyPressed(e) {
     player.y = canvas.height - player.h
 }
 
-document.body.addEventListener('keydown', keyPressed)
+document.body.addEventListener('keydown')
 
 setInterval(function() {
   // clear screen
@@ -44,4 +44,4 @@ setInterval(function() {
   
   // draw player
   player.render()
-}, 1000/60)
+}, 2000/60)
