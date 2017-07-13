@@ -18,13 +18,13 @@ function keyPressed(e) {
   
   var code = e.keyCode
   if (code == 38)
-    player.y -= 10
+    player.y -= 5
   if (code == 40)
-    player.y += 10
+    player.y += 5
   if (code == 37)
-    player.x -= 10
+    player.x -= 5
   if (code == 39)
-    player.x  += 10
+    player.x  += 5
 
   if (player.x < 0)
     player.x = 0
@@ -36,7 +36,7 @@ function keyPressed(e) {
     player.y = canvas.height - player.h
 }
 
-document.body.addEventListener('keydown')
+document.body.addEventListener('keydown', keyPressed)
 
 setInterval(function() {
   // clear screen
